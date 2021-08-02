@@ -27,16 +27,20 @@ class File extends Media
             ->readStream($this->file);
     }
 
-    public function write(string $content)
+    public function write(string $content): self
     {
         $this->requireAdapter()
             ->write($this->file, $content, new Config($this->options));
+
+        return $this;
     }
 
-    public function writeStream($stream)
+    public function writeStream($stream): self
     {
         $this->requireAdapter()
             ->writeStream($this->file, $stream, new Config($this->options));
+
+        return $this;
     }
 
     public function delete()
