@@ -18,7 +18,7 @@ class Storage
     public static function createInstance(array $config = [])
     {
         $adapter = $config['adapter'];
-        $options = $adapter['options'] ?? [];
+        $options = $config['options'] ?? [];
         if (!is_array($options)) {
             if (!is_only_callable($options)) {
                 throw new InvalidAdapterOptions();
