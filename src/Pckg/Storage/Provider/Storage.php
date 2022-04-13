@@ -8,7 +8,6 @@ use Pckg\Storage\Filesystem;
 
 class Storage extends Provider
 {
-
     public function services()
     {
         return [
