@@ -13,8 +13,9 @@
     "league/flysystem": "^2.2"
   },
   "require-dev": {
-    "pckg-app/frontend-dev": "dev-master",
-    "pckg/framework": "dev-master"
+    "pckg-app/frontend-dev": "dev-next-8.0 as dev-master",
+    "pckg/framework": "dev-next-8.0 as dev-master",
+    "pckg/collection": "dev-next-8.0 as dev-master"
   },
   "autoload": {
     "psr-0": {

@@ -7,7 +7,6 @@ use Pckg\Storage\Exception\FileAdapterNotSet;
 
 abstract class Media
 {
-
     protected array $options = [];
 
     protected FilesystemAdapter $adapter;

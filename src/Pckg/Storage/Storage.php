@@ -7,7 +7,6 @@ use Pckg\Storage\Exception\InvalidAdapterOptions;
 
 class Storage
 {
-
     protected FilesystemAdapter $adapter;
 
     public function __construct(FilesystemAdapter $adapter)
