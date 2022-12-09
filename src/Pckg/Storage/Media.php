@@ -16,14 +16,14 @@ abstract class Media
         $this->options = $options;
     }
 
-    public function setOptions(array $options): self
+    public function setOptions(array $options): static
     {
         $this->options = $options;
 
         return $this;
     }
 
-    public function setAdapter(FilesystemAdapter $adapter): self
+    public function setAdapter(FilesystemAdapter $adapter): static
     {
         $this->adapter = $adapter;
 
